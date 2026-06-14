@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience peak automotive performance and luxury with Velocity Motors. Explore our collection of premium sports cars, electric hypercars, and high-end SUVs.">
+    <title>Velocity Motors | Premium Luxury & Performance Cars</title>
+    <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- 1. LOADING ANIMATION / PRELOADER -->
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <div class="speedometer-container">
+                <div class="speedometer">
+                    <div class="dial"></div>
+                    <div class="needle"></div>
+                </div>
+            </div>
+            <div class="loader-logo">
+                <svg width="40" height="40" viewBox="0 0 100 100" class="logo-svg">
+                    <path d="M10 80 L50 20 L90 80 L50 60 Z" fill="none" stroke="#00e5ff" stroke-width="6" stroke-linejoin="round"/>
+                    <path d="M30 80 L50 50 L70 80 Z" fill="#00e5ff"/>
+                </svg>
+                <span class="logo-text">VELOCITY<span class="highlight">MOTORS</span></span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY GLASSMORPHIC HEADER / NAVIGATION -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 100 100" class="logo-svg">
+                    <path d="M10 80 L50 20 L90 80 L50 60 Z" fill="none" stroke="var(--accent-color)" stroke-width="6" stroke-linejoin="round"/>
+                    <path d="M30 80 L50 50 L70 80 Z" fill="var(--accent-color)"/>
+                </svg>
+                <span class="logo-text">VELOCITY<span class="highlight">MOTORS</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#featured" class="nav-link">Featured</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <a href="#contact" class="btn-nav">Get In Touch</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION (IMAGE SLIDER) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(10, 11, 13, 1)), url('assets/hero-bg-1.png');"></div>
+                <div class="hero-content">
+                    <span class="slide-tag">Electric Hypercar</span>
+                    <h1 class="slide-title">REDEFINE <span class="text-gradient">VELOCITY</span></h1>
+                    <p class="slide-subtitle">Experience the peak of zero-emission racing technology with the Velocity Aero. 2000 horsepower of pure adrenaline.</p>
+                    <div class="hero-actions">
+                        <a href="#featured" class="btn btn-primary">Explore Cars</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(10, 11, 13, 1)), url('assets/hero-bg-2.png');"></div>
+                <div class="hero-content">
+                    <span class="slide-tag">Stealth Concept</span>
+                    <h1 class="slide-title">THE ART OF <span class="text-gradient">SILENCE</span></h1>
+                    <p class="slide-subtitle">Sleek matte design meets precision aerodynamics. The Velocity Stealth is engineered to dominate the darkness.</p>
+                    <div class="hero-actions">
+                        <a href="#featured" class="btn btn-primary">Explore Cars</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(10, 11, 13, 1)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80');"></div>
+                <div class="hero-content">
+                    <span class="slide-tag">Luxury Grand Tourer</span>
+                    <h1 class="slide-title">ELEGANCE IN <span class="text-gradient">MOTION</span></h1>
+                    <p class="slide-subtitle">Crafted for transcontinental journeys. The Velocity Chronos balances unparalleled luxury with sports car handling.</p>
+                    <div class="hero-actions">
+                        <a href="#featured" class="btn btn-primary">Explore Cars</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-arrow prev" id="hero-prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow next" id="hero-next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <a href="#featured" aria-label="Scroll Down">
+                <span>SCROLL DOWN</span>
+                <i class="fas fa-chevron-down bounce"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED CARS SECTION -->
+    <section id="featured" class="section-padding">
+        <div class="section-header">
+            <span class="subtitle">The Fleet</span>
+            <h2 class="title">Featured <span class="text-gradient">Vehicles</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="container">
+            <div class="featured-grid">
+                <!-- Car 1: Aero -->
+                <div class="car-card glass-panel" data-car="aero">
+                    <div class="car-image-container">
+                        <img src="assets/car-aero.png" alt="Velocity Aero" class="car-img" loading="lazy">
+                        <span class="car-tag">Electric</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Aero</h3>
+                        <div class="car-price">$2,400,000</div>
+                        <p class="car-desc">An all-electric hypercar delivering unparalleled speed, aerodynamic stability, and futuristic carbon composites.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-bolt"></i> 2000 HP</span>
+                            <span><i class="fas fa-gauge-high"></i> 0-60: 1.8s</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('aero')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Car 2: Stealth -->
+                <div class="car-card glass-panel" data-car="stealth">
+                    <div class="car-image-container">
+                        <img src="assets/car-stealth.png" alt="Velocity Stealth" class="car-img" loading="lazy">
+                        <span class="car-tag">V8 Hybrid</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Stealth</h3>
+                        <div class="car-price">$1,850,000</div>
+                        <p class="car-desc">Finished in deep matte black, this V8 hybrid combines devastating combustion force with silent electric cruising.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-fire"></i> 1200 HP</span>
+                            <span><i class="fas fa-gauge-high"></i> 0-60: 2.2s</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('stealth')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Car 3: Chronos -->
+                <div class="car-card glass-panel" data-car="chronos">
+                    <div class="car-image-container">
+                        <img src="assets/car-chronos.png" alt="Velocity Chronos" class="car-img" loading="lazy">
+                        <span class="car-tag">Twin Turbo V6</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Chronos</h3>
+                        <div class="car-price">$420,000</div>
+                        <p class="car-desc">A premium grand tourer merging pure luxury, handmade Italian leather seats, and high-performance highway cruising.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-horse"></i> 650 HP</span>
+                            <span><i class="fas fa-gauge-high"></i> 0-60: 3.1s</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('chronos')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Car 4: Electra -->
+                <div class="car-card glass-panel" data-car="electra">
+                    <div class="car-image-container">
+                        <img src="assets/car-electra.png" alt="Velocity Electra" class="car-img" loading="lazy">
+                        <span class="car-tag">EV Sedan</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Electra</h3>
+                        <div class="car-price">$145,000</div>
+                        <p class="car-desc">The ultimate daily driver featuring autonomous driving capabilities, dynamic solar charging glass roof, and a high range battery.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-battery-three-quarters"></i> 480 mi Range</span>
+                            <span><i class="fas fa-gauge-high"></i> 0-60: 2.9s</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('electra')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Car 5: Apex -->
+                <div class="car-card glass-panel" data-car="apex">
+                    <div class="car-image-container">
+                        <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80" alt="Velocity Apex" class="car-img" loading="lazy">
+                        <span class="car-tag">Track Only</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Apex</h3>
+                        <div class="car-price">$380,000</div>
+                        <p class="car-desc">Built strictly for the racetrack. Featuring a stripped-out carbon cabin, racing slick tires, and an active downforce spoiler.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 9000 RPM</span>
+                            <span><i class="fas fa-scale-unbalanced"></i> Weight: 2600 lbs</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('apex')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Car 6: Horizon -->
+                <div class="car-card glass-panel" data-car="horizon">
+                    <div class="car-image-container">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Velocity Horizon" class="car-img" loading="lazy">
+                        <span class="car-tag">Luxury SUV</span>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Velocity Horizon</h3>
+                        <div class="car-price">$160,000</div>
+                        <p class="car-desc">An off-road electric powerhouse. Adaptive air suspension, massive cargo capacity, and dual motor all-wheel drive.</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-mountain"></i> AWD Terrain</span>
+                            <span><i class="fas fa-battery-full"></i> 520 mi Range</span>
+                        </div>
+                        <button class="btn btn-card-details" onclick="openDetails('horizon')">Details <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ABOUT US SECTION -->
+    <section id="about" class="section-padding section-dark-bg">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image-wrapper">
+                    <div class="about-image-card">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80" alt="Velocity Motors Manufacturing" class="about-img" loading="lazy">
+                        <div class="about-badge glass-panel">
+                            <span class="badge-num">15+</span>
+                            <span class="badge-text">Years of Engineering Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="subtitle">Our Story</span>
+                    <h2 class="title">Pushing the Limits of <span class="text-gradient">Possibility</span></h2>
+                    <p class="about-desc">
+                        Founded in 2011, Velocity Motors was born out of a single dream: to create standard-setting automobiles that bridge the gap between luxury and racetrack performance. We believe that driving is an art form.
+                    </p>
+                    <p class="about-desc">
+                        Every vehicle that leaves our state-of-the-art facility is a testament to precision engineering, handcrafted finishes, and industry-leading green hyper-propulsion technology.
+                    </p>
+
+                    <!-- Statistics Counter Grid -->
+                    <div class="stats-grid" id="stats-section">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="12500">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Vehicles Sold</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="98">0</span><span class="stat-percent">%</span>
+                            <span class="stat-label">Customer Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="32">0</span>
+                            <span class="stat-label">Global Showrooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SERVICES SECTION -->
+    <section id="services" class="section-padding">
+        <div class="section-header">
+            <span class="subtitle">What We Do</span>
+            <h2 class="title">Our Premium <span class="text-gradient">Services</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-car-side service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Bespoke Car Sales</h3>
+                    <p class="service-desc">Tailor every detail of your supercar. From exterior custom paint finishes to personalized cabin leather embroidery.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-key service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Elite Car Rentals</h3>
+                    <p class="service-desc">Experience luxury on your own terms. Rent our top-tier sports cars and SUVs for weekend getaways or VIP business events.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-screwdriver-wrench service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Precision Maintenance</h3>
+                    <p class="service-desc">Our master technicians utilize specialized diagnostics and genuine replacement components to keep your fleet in race-ready condition.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-wallet service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Tailored Financing</h3>
+                    <p class="service-desc">Flexible leasing programs and tailor-made financing plans designed specifically for our premium private and corporate clientele.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. GALLERY SECTION (INTERACTIVE LIGHTBOX) -->
+    <section id="gallery" class="section-padding section-dark-bg">
+        <div class="section-header">
+            <span class="subtitle">Visual Showcase</span>
+            <h2 class="title">Captured <span class="text-gradient">Moments</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-index="0">
+                    <img src="assets/hero-bg-1.png" alt="Aero on Track" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Velocity Aero - High Speed Track Testing</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-index="1">
+                    <img src="assets/hero-bg-2.png" alt="Stealth Showroom" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Velocity Stealth - Showroom Presentation</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Chronos Cruise" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Velocity Chronos - Evening Highway Cruise</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-index="3">
+                    <img src="assets/car-electra.png" alt="Electra Studio" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Velocity Electra - Clean Aerodynamic Profile</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80" alt="Aero Detail" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Aero Detail - Advanced Rear Wing Diffuser</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80" alt="Stealth Rear View" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand-alt gallery-zoom-icon"></i>
+                        <span class="gallery-caption">Velocity Stealth - Menacing Rear Profiling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX OVERLAY -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-arrow prev" id="lightbox-prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-arrow next" id="lightbox-next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img src="" alt="Enlarged View" class="lightbox-image" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- 8. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-padding">
+        <div class="section-header">
+            <span class="subtitle">Reviews</span>
+            <h2 class="title">Owner <span class="text-gradient">Testimonials</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="container">
+            <div class="testimonials-wrapper">
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card glass-panel active">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">
+                            "Driving the Velocity Aero is a spiritual experience. The instantaneous electric torque is intoxicating, yet the handling feels incredibly connected. It's the future of driving, today."
+                        </p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Julian Sterling" class="client-avatar" loading="lazy">
+                            <div class="client-details">
+                                <h4 class="client-name">Julian Sterling</h4>
+                                <span class="client-title">Tech Venture Capitalist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card glass-panel">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">
+                            "Velocity Motors has redefined what client service means. The custom paint customization process for my Stealth was flawless, and the final matte finish is absolutely breathtaking."
+                        </p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80" alt="Evelyn Vane" class="client-avatar" loading="lazy">
+                            <div class="client-details">
+                                <h4 class="client-name">Evelyn Vane</h4>
+                                <span class="client-title">Luxury Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card glass-panel">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">
+                            "The Chronos is the ultimate grand tourer. I drove it across continental Europe last summer, and it managed high-altitude alpine passes and flat autobahns with equal, effortless grace."
+                        </p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Marcus Kaelen" class="client-avatar" loading="lazy">
+                            <div class="client-details">
+                                <h4 class="client-name">Marcus Kaelen</h4>
+                                <span class="client-title">Automotive Collector</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Navigation Controls -->
+                <div class="testimonial-controls">
+                    <button class="test-nav-btn" id="test-prev" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+                    <div class="test-indicator-dots" id="test-dots">
+                        <span class="test-dot active" data-index="0"></span>
+                        <span class="test-dot" data-index="1"></span>
+                        <span class="test-dot" data-index="2"></span>
+                    </div>
+                    <button class="test-nav-btn" id="test-next" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section id="contact" class="section-padding section-dark-bg">
+        <div class="section-header">
+            <span class="subtitle">Connect</span>
+            <h2 class="title">Begin Your <span class="text-gradient">Journey</span></h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel glass-panel">
+                    <h3>Velocity Motors HQ</h3>
+                    <p class="contact-sub">Connect with our luxury consultants globally or schedule a private private viewing.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="info-text">
+                                <strong>Headquarters</strong>
+                                <span>100 Velocity Boulevard, Silicon Valley, CA 94025</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="info-text">
+                                <strong>Phone</strong>
+                                <span>+1 (800) 555-8356</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <strong>General Inquiry</strong>
+                                <span>concierge@velocitymotors.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-container">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel glass-panel">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Interested Vehicle / Inquiry Subject</label>
+                            <select id="form-subject">
+                                <option value="general" selected>General Consultation</option>
+                                <option value="aero">Purchase Velocity Aero</option>
+                                <option value="stealth">Purchase Velocity Stealth</option>
+                                <option value="chronos">Purchase Velocity Chronos</option>
+                                <option value="rentals">Elite Car Rentals</option>
+                                <option value="maintenance">Service Appointment</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Your Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+                            <span class="error-msg" id="message-error">Please enter your message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS TOAST NOTIFICATION -->
+    <div id="toast" class="toast glass-panel">
+        <div class="toast-icon"><i class="fas fa-circle-check"></i></div>
+        <div class="toast-body">
+            <h4>Inquiry Received</h4>
+            <p>Our concierge team will contact you shortly.</p>
+        </div>
+    </div>
+
+    <!-- VEHICLE DETAILS MODAL (DYNAMIC POPUP) -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-body-container">
+                <div class="modal-image">
+                    <img src="" id="modal-car-img" alt="Car Detail">
+                </div>
+                <div class="modal-info-content">
+                    <span class="modal-tag" id="modal-car-tag">Hypercar</span>
+                    <h3 class="modal-title" id="modal-car-title">Velocity Aero</h3>
+                    <div class="modal-price" id="modal-car-price">$2,400,000</div>
+                    <p class="modal-description" id="modal-car-desc">Detailed descriptions of the specifications and technologies go here.</p>
+                    
+                    <div class="specs-list">
+                        <div class="spec-row">
+                            <span>Engine/Propulsion:</span>
+                            <span id="modal-spec-powertrain" class="spec-val">Quad-Motor EV</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Horsepower:</span>
+                            <span id="modal-spec-hp" class="spec-val">2000 HP</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Acceleration (0-60 mph):</span>
+                            <span id="modal-spec-accel" class="spec-val">1.8 seconds</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Top Speed:</span>
+                            <span id="modal-spec-speed" class="spec-val">258 mph</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary btn-modal-cta" onclick="closeModalAndContact()">Inquire For Purchase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Footer Column 1 -->
+                <div class="footer-col footer-brand">
+                    <a href="#" class="logo">
+                        <svg width="32" height="32" viewBox="0 0 100 100" class="logo-svg">
+                            <path d="M10 80 L50 20 L90 80 L50 60 Z" fill="none" stroke="var(--accent-color)" stroke-width="6" stroke-linejoin="round"/>
+                            <path d="M30 80 L50 50 L70 80 Z" fill="var(--accent-color)"/>
+                        </svg>
+                        <span class="logo-text">VELOCITY<span class="highlight">MOTORS</span></span>
+                    </a>
+                    <p class="footer-desc">Crafting high-performance luxury automobiles. Our engineering vision is fueled by performance, refined by design, and driven by passion.</p>
+                </div>
+
+                <!-- Footer Column 2 -->
+                <div class="footer-col">
+                    <h4>The Fleet</h4>
+                    <ul>
+                        <li><a href="#featured">Velocity Aero</a></li>
+                        <li><a href="#featured">Velocity Stealth</a></li>
+                        <li><a href="#featured">Velocity Chronos</a></li>
+                        <li><a href="#featured">Velocity Electra</a></li>
+                        <li><a href="#featured">Velocity Apex</a></li>
+                        <li><a href="#featured">Velocity Horizon</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4 -->
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p class="newsletter-desc">Subscribe to receive exclusive previews of our upcoming vehicle releases and corporate news.</p>
+                    <form class="footer-newsletter" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-chevron-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velocity Motors. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
